@@ -1,0 +1,27 @@
+<html>
+<h1>List of lists</h1>
+
+<h2>Cats</h2>
+
+	<ul>
+	<% @cats.each do |cat| %>
+		<li><%= cat.name %>
+	<% end %>
+	</ul>
+
+<h2>Todos</h2>
+	<ul>
+	<% @todos.each do |todo| %>
+		<li><%= todo.tasks %>
+	<% end %>
+	</ul>
+<%= link_to("Create Todo", "/todos/new") %>
+
+<h2>Users</h2>
+	<ul>
+	<% @users.each do |user| %>
+		<li><%= user.username %>
+	<% end %>
+	</ul>
+
+</html>
